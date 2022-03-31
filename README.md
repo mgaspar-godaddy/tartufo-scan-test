@@ -99,6 +99,6 @@ index fee3e6e..7b0d8b9 100755
 
 # Links
 
-Issue on Tartufo: https://github.com/godaddy/tartufo/issues/343
-PR on Tartufo: https://github.com/godaddy/tartufo/pull/344
+- Issue on Tartufo: https://github.com/godaddy/tartufo/issues/343
+- PR on Tartufo: https://github.com/godaddy/tartufo/pull/344
 
