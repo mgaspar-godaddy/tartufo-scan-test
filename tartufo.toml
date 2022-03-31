@@ -1,0 +1,19 @@
+[tool.tartufo]
+repo-path = "."
+json = false
+cleanup = true
+entropy = true
+exclude-entropy-patterns = [
+  { reason = 'Testing exclusions by entropy patterns', pattern = 'sha512: [a-zA-Z0-9]{128}', path-pattern = 'test-(file|entropy)\.(yaml|txt)' }
+]
+exclude-path-patterns = [
+  { reason = 'README file', path-pattern = 'README\.md' },
+  { reason = 'Exclude file for testing', path-pattern = 'excluded-file\.txt' }
+]
+exclude-signatures = [
+  { reason = 'Exclude by signature for testing', signature = 'dc483400d03f79ca7b39c0429bec6218170d0f716b3abfdf05fcc4c2a4872a43' }
+]
+rule-patterns = [
+  { reason = 'Password saved to variable', pattern = '''(?i)\w*(?:pw|pass|password)\s?=\s?(?:'|")(?!\*\*\*REMOVED\*\*\*)([\w~!@#$%^&*();:,.?<>|\/\[\]\+\-\=\\]+)(?:'|")''' },
+  { reason = 'Username saved to variable', pattern = '''(?i)\w*(?:user|username)\s?=\s?(?:'|")(?!\*\*\*REMOVED\*\*\*)([\w]+)(?:'|")''' }
+]
