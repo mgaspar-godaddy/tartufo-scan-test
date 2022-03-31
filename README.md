@@ -97,3 +97,8 @@ index fee3e6e..7b0d8b9 100755
                  "Excluded entropy was initialized as: %s", self._excluded_entropy
 ```
 
+# Links
+
+Issue on Tartufo: https://github.com/godaddy/tartufo/issues/343
+PR on Tartufo: https://github.com/godaddy/tartufo/pull/344
+
